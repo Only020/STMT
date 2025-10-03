@@ -43,14 +43,6 @@ Our experiments are conducted on multiple real-world traffic datasets:
 - **Jinan**: Traffic data from Jinan, China
   - Source: [STDN Repository](https://github.com/roarer008/STDN.git)
 
-### Data Download
-
-Preprocessed datasets are available for download:
-
-📦 [Download Processed Datasets](https://drive.google.com/file/d/1dq-35bFMltJ_Jh8G2rJQiR27SJEVLJeG/view?usp=sharing)
-
-After downloading, extract the data into the `data/` directory.
-
 ## 🚀 Quick Start
 
 ### Requirements
