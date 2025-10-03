@@ -1,0 +1,25 @@
+{
+
+    "dataset": "pems03",
+    "data": "data/PEMS03", 
+
+ 
+    "seq_length": 12, 
+ 
+
+    "in_dim": 2,
+
+    "lr": 0.001,
+    "clip": null,
+
+    "num_nodes": 358,
+
+    "dropout": 0.1, 
+    "epochs": 200, 
+    "print_every": 50, 
+    "seed": 42,
+    "load_path": null,
+    "patience": 22, 
+    "lr_mul": 1,
+    "n_warmup_steps": 4000
+}
