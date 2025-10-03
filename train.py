@@ -10,7 +10,6 @@ import time
 from tqdm import tqdm
 import util
 from util import log_string
-import matplotlib.pyplot as plt
 from engine import trainer
 
 
