@@ -50,6 +50,6 @@ ENV/
 log/
 
 model.py
-# generate_training_data.py
+generate_training_data.py
 graph_learner.py
 layer.py
