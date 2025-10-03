@@ -1,0 +1,108 @@
+Start Deterministic Training with seed 42
+x_train.shape: (10181, 12, 307, 2) y_train.shape: (10181, 12, 307, 2)
+x_val.shape: (3394, 12, 307, 2) y_val.shape: (3394, 12, 307, 2)
+x_test.shape: (3394, 12, 307, 2) y_test.shape: (3394, 12, 307, 2)
+mean: 207.22733840505313 std: 156.47765518492758
+------------ Options -------------
+device: cuda:0
+k: 307
+l: 2
+dataset: pems04
+data: data/PEMS04
+seq_length: 12
+steps_per_day: 288
+nhid: 128
+in_dim: 2
+num_nodes: 307
+batch_size: 32
+dropout: 0.1
+epochs: 200
+print_every: 50
+seed: 42
+save: ./study/experiment/pems04/06_28_01_01/
+expid: 1
+load_path: None
+patience: 25
+lr_mul: 1
+n_warmup_steps: 4000
+lr: 0.001
+clip: None
+gcn_depth: 1
+propalpha: 0.05
+alpha: 2.0
+log: ./study/logs/pems04/06_28_01_01.log
+-------------- End ----------------
+Train the model with 2347080 parameters
+start training...
+Epoch: 001, Train Loss: 52.9383, Valid Loss: 28.6568, Valid RMSE: 42.0415,Valid MAE: 28.6568,Training Time: 78.5180/epoch
+Epoch: 002, Train Loss: 28.0440, Valid Loss: 24.9397, Valid RMSE: 37.2682,Valid MAE: 24.9397,Training Time: 77.2867/epoch
+Epoch: 003, Train Loss: 24.6089, Valid Loss: 24.2315, Valid RMSE: 35.5776,Valid MAE: 24.2315,Training Time: 77.3484/epoch
+Epoch: 004, Train Loss: 23.9563, Valid Loss: 24.4080, Valid RMSE: 35.1973,Valid MAE: 24.4080,Training Time: 77.2034/epoch
+Epoch: 005, Train Loss: 23.1271, Valid Loss: 23.5372, Valid RMSE: 34.1738,Valid MAE: 23.5372,Training Time: 77.2980/epoch
+Epoch: 006, Train Loss: 22.9186, Valid Loss: 22.9205, Valid RMSE: 32.9105,Valid MAE: 22.9205,Training Time: 77.5176/epoch
+Epoch: 007, Train Loss: 22.1323, Valid Loss: 22.6677, Valid RMSE: 32.8609,Valid MAE: 22.6677,Training Time: 77.2882/epoch
+Epoch: 008, Train Loss: 21.6851, Valid Loss: 21.4728, Valid RMSE: 31.7707,Valid MAE: 21.4728,Training Time: 77.3418/epoch
+Epoch: 009, Train Loss: 21.3927, Valid Loss: 21.2745, Valid RMSE: 31.6572,Valid MAE: 21.2745,Training Time: 77.5005/epoch
+Epoch: 010, Train Loss: 21.3805, Valid Loss: 21.3057, Valid RMSE: 31.7251,Valid MAE: 21.3057,Training Time: 77.2934/epoch
+Epoch: 011, Train Loss: 20.9975, Valid Loss: 19.7745, Valid RMSE: 29.9217,Valid MAE: 19.7745,Training Time: 77.3467/epoch
+Epoch: 012, Train Loss: 20.9637, Valid Loss: 20.2893, Valid RMSE: 30.1825,Valid MAE: 20.2893,Training Time: 77.2195/epoch
+Epoch: 013, Train Loss: 23.4231, Valid Loss: 21.5438, Valid RMSE: 31.8436,Valid MAE: 21.5438,Training Time: 77.3705/epoch
+Epoch: 014, Train Loss: 22.4399, Valid Loss: 20.7549, Valid RMSE: 30.6703,Valid MAE: 20.7549,Training Time: 77.2372/epoch
+Epoch: 015, Train Loss: 20.8601, Valid Loss: 20.9400, Valid RMSE: 30.5517,Valid MAE: 20.9400,Training Time: 77.2657/epoch
+Epoch: 016, Train Loss: 20.2911, Valid Loss: 20.6318, Valid RMSE: 30.5314,Valid MAE: 20.6318,Training Time: 77.4111/epoch
+Epoch: 017, Train Loss: 19.7923, Valid Loss: 19.7127, Valid RMSE: 29.7999,Valid MAE: 19.7127,Training Time: 77.2756/epoch
+Epoch: 018, Train Loss: 19.0676, Valid Loss: 19.3573, Valid RMSE: 29.2544,Valid MAE: 19.3573,Training Time: 77.4162/epoch
+Epoch: 019, Train Loss: 18.5369, Valid Loss: 18.9867, Valid RMSE: 29.0074,Valid MAE: 18.9867,Training Time: 77.1954/epoch
+Epoch: 020, Train Loss: 18.0473, Valid Loss: 18.8206, Valid RMSE: 28.7333,Valid MAE: 18.8206,Training Time: 77.2213/epoch
+Epoch: 021, Train Loss: 17.7195, Valid Loss: 18.3309, Valid RMSE: 28.4712,Valid MAE: 18.3309,Training Time: 77.0953/epoch
+Epoch: 022, Train Loss: 17.3852, Valid Loss: 18.2795, Valid RMSE: 28.4767,Valid MAE: 18.2795,Training Time: 77.1927/epoch
+Epoch: 023, Train Loss: 17.1605, Valid Loss: 18.1563, Valid RMSE: 28.3635,Valid MAE: 18.1563,Training Time: 77.1695/epoch
+Epoch: 024, Train Loss: 17.0061, Valid Loss: 18.0707, Valid RMSE: 28.3823,Valid MAE: 18.0707,Training Time: 77.3446/epoch
+Epoch: 025, Train Loss: 16.9245, Valid Loss: 18.0606, Valid RMSE: 28.3524,Valid MAE: 18.0606,Training Time: 77.3015/epoch
+Epoch: 026, Train Loss: 20.8231, Valid Loss: 19.4726, Valid RMSE: 29.3782,Valid MAE: 19.4726,Training Time: 77.2430/epoch
+Epoch: 027, Train Loss: 19.3440, Valid Loss: 19.6314, Valid RMSE: 29.5929,Valid MAE: 19.6314,Training Time: 77.4125/epoch
+Epoch: 028, Train Loss: 19.1399, Valid Loss: 18.9463, Valid RMSE: 29.0897,Valid MAE: 18.9463,Training Time: 77.5633/epoch
+Epoch: 029, Train Loss: 18.6899, Valid Loss: 19.1186, Valid RMSE: 29.1800,Valid MAE: 19.1186,Training Time: 77.2657/epoch
+Epoch: 030, Train Loss: 18.2473, Valid Loss: 19.2253, Valid RMSE: 29.2337,Valid MAE: 19.2253,Training Time: 77.3530/epoch
+Epoch: 031, Train Loss: 17.8800, Valid Loss: 18.5369, Valid RMSE: 28.6606,Valid MAE: 18.5369,Training Time: 77.2716/epoch
+Epoch: 032, Train Loss: 17.4633, Valid Loss: 18.4109, Valid RMSE: 28.5426,Valid MAE: 18.4109,Training Time: 77.2989/epoch
+Epoch: 033, Train Loss: 17.1734, Valid Loss: 18.2641, Valid RMSE: 28.5872,Valid MAE: 18.2641,Training Time: 77.1931/epoch
+Epoch: 034, Train Loss: 16.8827, Valid Loss: 18.0976, Valid RMSE: 28.4903,Valid MAE: 18.0976,Training Time: 77.4847/epoch
+Epoch: 035, Train Loss: 16.6579, Valid Loss: 18.0898, Valid RMSE: 28.4584,Valid MAE: 18.0898,Training Time: 77.3142/epoch
+Epoch: 036, Train Loss: 16.4997, Valid Loss: 18.0302, Valid RMSE: 28.4451,Valid MAE: 18.0302,Training Time: 77.4820/epoch
+Epoch: 037, Train Loss: 16.4072, Valid Loss: 17.9785, Valid RMSE: 28.4188,Valid MAE: 17.9785,Training Time: 77.3686/epoch
+Epoch: 038, Train Loss: 18.4785, Valid Loss: 19.3072, Valid RMSE: 29.3027,Valid MAE: 19.3072,Training Time: 77.1602/epoch
+Epoch: 039, Train Loss: 18.6034, Valid Loss: 19.5693, Valid RMSE: 29.6976,Valid MAE: 19.5693,Training Time: 77.1389/epoch
+Epoch: 040, Train Loss: 18.4572, Valid Loss: 19.2647, Valid RMSE: 29.2139,Valid MAE: 19.2647,Training Time: 77.2623/epoch
+Epoch: 041, Train Loss: 18.2764, Valid Loss: 18.9489, Valid RMSE: 29.0196,Valid MAE: 18.9489,Training Time: 77.2193/epoch
+Epoch: 042, Train Loss: 17.8556, Valid Loss: 18.6646, Valid RMSE: 29.0434,Valid MAE: 18.6646,Training Time: 77.1556/epoch
+Epoch: 043, Train Loss: 17.5181, Valid Loss: 19.1522, Valid RMSE: 29.2896,Valid MAE: 19.1522,Training Time: 77.3133/epoch
+Epoch: 044, Train Loss: 17.1680, Valid Loss: 18.3378, Valid RMSE: 28.6567,Valid MAE: 18.3378,Training Time: 77.1925/epoch
+Epoch: 045, Train Loss: 16.8325, Valid Loss: 18.2415, Valid RMSE: 28.5723,Valid MAE: 18.2415,Training Time: 77.2632/epoch
+Epoch: 046, Train Loss: 16.5921, Valid Loss: 18.2460, Valid RMSE: 28.6082,Valid MAE: 18.2460,Training Time: 77.1828/epoch
+Epoch: 047, Train Loss: 16.3601, Valid Loss: 18.1345, Valid RMSE: 28.5662,Valid MAE: 18.1345,Training Time: 77.2444/epoch
+Epoch: 048, Train Loss: 16.2094, Valid Loss: 17.9965, Valid RMSE: 28.4962,Valid MAE: 17.9965,Training Time: 77.2253/epoch
+Epoch: 049, Train Loss: 16.0948, Valid Loss: 17.9982, Valid RMSE: 28.5186,Valid MAE: 17.9982,Training Time: 77.6604/epoch
+Epoch: 050, Train Loss: 16.0386, Valid Loss: 17.9794, Valid RMSE: 28.5121,Valid MAE: 17.9794,Training Time: 77.2373/epoch
+Epoch: 051, Train Loss: 18.4448, Valid Loss: 19.1759, Valid RMSE: 29.2518,Valid MAE: 19.1759,Training Time: 77.1975/epoch
+Epoch: 052, Train Loss: 18.1180, Valid Loss: 18.8075, Valid RMSE: 29.0428,Valid MAE: 18.8075,Training Time: 77.3076/epoch
+Epoch: 053, Train Loss: 17.7752, Valid Loss: 19.3831, Valid RMSE: 29.4391,Valid MAE: 19.3831,Training Time: 77.3080/epoch
+Epoch: 054, Train Loss: 17.5955, Valid Loss: 19.4592, Valid RMSE: 29.2466,Valid MAE: 19.4592,Training Time: 77.2124/epoch
+Epoch: 055, Train Loss: 17.3001, Valid Loss: 18.6506, Valid RMSE: 29.0303,Valid MAE: 18.6506,Training Time: 77.2030/epoch
+Epoch: 056, Train Loss: 17.0179, Valid Loss: 18.7582, Valid RMSE: 29.2256,Valid MAE: 18.7582,Training Time: 77.2635/epoch
+Epoch: 057, Train Loss: 16.6672, Valid Loss: 18.2035, Valid RMSE: 28.7321,Valid MAE: 18.2035,Training Time: 77.3342/epoch
+Epoch: 058, Train Loss: 16.4065, Valid Loss: 18.3960, Valid RMSE: 28.7581,Valid MAE: 18.3960,Training Time: 77.3231/epoch
+Epoch: 059, Train Loss: 16.1791, Valid Loss: 18.1424, Valid RMSE: 28.6285,Valid MAE: 18.1424,Training Time: 77.1986/epoch
+Epoch: 060, Train Loss: 16.0011, Valid Loss: 18.0136, Valid RMSE: 28.5963,Valid MAE: 18.0136,Training Time: 77.2450/epoch
+Epoch: 061, Train Loss: 15.8753, Valid Loss: 18.0063, Valid RMSE: 28.6265,Valid MAE: 18.0063,Training Time: 77.2766/epoch
+Epoch: 062, Train Loss: 15.7985, Valid Loss: 18.0031, Valid RMSE: 28.6253,Valid MAE: 18.0031,Training Time: 77.2540/epoch
+Epoch: 063, Train Loss: 17.6907, Valid Loss: 18.5209, Valid RMSE: 28.8880,Valid MAE: 18.5209,Training Time: 77.1457/epoch
+Early Termination!
+Average Training Time: 77.3085 secs/epoch
+Average Inference Time: 8.3455 secs
+Training finished
+The best model is saved at epoch 37, with valid loss 17.9785
+Evaluate best model on test data for horizon 3, Test MAE: 17.4896, Test MAPE: 0.1197, Test RMSE: 28.7097
+Evaluate best model on test data for horizon 6, Test MAE: 18.2212, Test MAPE: 0.1222, Test RMSE: 30.0657
+Evaluate best model on test data for horizon 12, Test MAE: 19.3452, Test MAPE: 0.1298, Test RMSE: 31.7603
+On average over 12 horizons, Test MAE: 18.2101, Test MAPE: 0.1227, Test RMSE: 29.9491

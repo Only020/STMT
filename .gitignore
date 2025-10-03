@@ -47,7 +47,7 @@ ENV/
 *.ckpt
 
 *.ipynb
-logs/
+log/
 
 model.py
 generate_training_data.py
