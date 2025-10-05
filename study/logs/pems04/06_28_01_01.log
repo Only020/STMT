@@ -5,7 +5,7 @@ x_test.shape: (3394, 12, 307, 2) y_test.shape: (3394, 12, 307, 2)
 mean: 207.22733840505313 std: 156.47765518492758
 ------------ Options -------------
 device: cuda:0
-k: 307
+k: 15
 l: 2
 dataset: pems04
 data: data/PEMS04

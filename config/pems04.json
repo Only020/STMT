@@ -1,7 +1,7 @@
 {
     "dataset": "pems04",
     "data": "data/PEMS04",
-    "k": 307,
+    "k": 15,
     "seq_length": 12,
 
     "in_dim": 2,
