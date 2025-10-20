@@ -86,7 +86,6 @@ def generate_train_val_test(args):
     print("x shape: ", x.shape, ", y shape: ", y.shape)
     # Write the data into npz file.
     num_samples = x.shape[0]
-    #metrla和pemsbay数据集的划分
     # num_test = round(num_samples * 0.2)
     # num_train = round(num_samples * 0.7)
     

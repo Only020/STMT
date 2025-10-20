@@ -51,6 +51,5 @@ ENV/
 log/
 plot_loss.py
 model.py
-generate_training_data.py
 graph_learner.py
 layer.py
