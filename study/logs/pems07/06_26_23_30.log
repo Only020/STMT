@@ -151,4 +151,4 @@ The best model is saved at epoch 83, with valid loss 18.9695
 Evaluate best model on test data for horizon 3, Test MAE: 18.2705, Test MAPE: 0.0766, Test RMSE: 30.8888
 Evaluate best model on test data for horizon 6, Test MAE: 19.5759, Test MAPE: 0.0816, Test RMSE: 33.6021
 Evaluate best model on test data for horizon 12, Test MAE: 21.4562, Test MAPE: 0.0897, Test RMSE: 36.9321
-On average over 12 horizons, Test MAE: 19.5349, Test MAPE: 0.0816, Test RMSE: 33.3348
+On average over 12 horizons, Test MAE: 19.5349, Test MAPE: 0.0816, Test RMSE: 33.3248
