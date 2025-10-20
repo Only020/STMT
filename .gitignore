@@ -45,10 +45,11 @@ ENV/
 *.pkl
 *.h5
 *.ckpt
-
+*.png
+*.pdf
 *.ipynb
 log/
-
+plot_loss.py
 model.py
 generate_training_data.py
 graph_learner.py

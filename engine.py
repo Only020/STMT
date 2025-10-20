@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from model import STMT
-# from models.model import TESTAM
 import util
 
 class trainer():
