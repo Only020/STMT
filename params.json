@@ -1,0 +1,1294 @@
+{
+  "STGNCDE": {
+    "PEMSD7": {
+      "cheb_k": 2,
+      "embed_dim": 10,
+      "g_type": "agc",
+      "hid_dim": 64,
+      "hid_hid_dim": 64,
+      "input_dim": 2,
+      "num_layers": 2,
+      "num_nodes": 883,
+      "output_dim": 1,
+      "solver": "rk4",
+      "type": "type1"
+    },
+    "PEMSD8": {
+      "cheb_k": 2,
+      "embed_dim": 10,
+      "g_type": "agc",
+      "hid_dim": 128,
+      "hid_hid_dim": 64,
+      "input_dim": 2,
+      "num_layers": 2,
+      "num_nodes": 170,
+      "output_dim": 1,
+      "solver": "rk4",
+      "type": "type1"
+    },
+    "PEMSD4": {
+      "cheb_k": 2,
+      "embed_dim": 10,
+      "g_type": "agc",
+      "hid_dim": 128,
+      "hid_hid_dim": 128,
+      "input_dim": 2,
+      "num_layers": 2,
+      "num_nodes": 307,
+      "output_dim": 1,
+      "solver": "rk4",
+      "type": "type1"
+    },
+    "PEMSD3": {
+      "cheb_k": 2,
+      "embed_dim": 10,
+      "g_type": "agc",
+      "hid_dim": 128,
+      "hid_hid_dim": 128,
+      "input_dim": 2,
+      "num_layers": 2,
+      "num_nodes": 358,
+      "output_dim": 1,
+      "solver": "rk4",
+      "type": "type1"
+    }
+  },
+  "GWN": {
+    "PEMSD7": {
+        "num_nodes": 883,
+        "dropout": 0.3,
+        "gcn_bool": true,
+        "addaptadj": true,
+        "aptinit": null,
+        "in_dim": 2,
+        "out_dim": 12,
+        "residual_channels": 32,
+        "dilation_channels": 32,
+        "skip_channels": 256,
+        "end_channels": 512,
+        "kernel_size": 2,
+        "blocks": 4,
+        "layers": 2
+    },
+    "PEMSD8": {
+        "num_nodes": 170,
+        "dropout": 0.3,
+        "gcn_bool": true,
+        "addaptadj": true,
+        "aptinit": null,
+        "in_dim": 2,
+        "out_dim": 12,
+        "residual_channels": 32,
+        "dilation_channels": 32,
+        "skip_channels": 256,
+        "end_channels": 512,
+        "kernel_size": 2,
+        "blocks": 4,
+        "layers": 2
+    },
+    "PEMSD4": {
+        "num_nodes": 307,
+        "dropout": 0.3,
+        "gcn_bool": true,
+        "addaptadj": true,
+        "aptinit": null,
+        "in_dim": 2,
+        "out_dim": 12,
+        "residual_channels": 32,
+        "dilation_channels": 32,
+        "skip_channels": 256,
+        "end_channels": 512,
+        "kernel_size": 2,
+        "blocks": 4,
+        "layers": 2
+    },
+    "PEMSD3": {
+        "num_nodes": 358,
+        "dropout": 0.3,
+        "gcn_bool": true,
+        "addaptadj": true,
+        "aptinit": null,
+        "in_dim": 2,
+        "out_dim": 12,
+        "residual_channels": 32,
+        "dilation_channels": 32,
+        "skip_channels": 256,
+        "end_channels": 512,
+        "kernel_size": 2,
+        "blocks": 4,
+        "layers": 2
+    },
+    "SD":{
+        "num_nodes": 716,
+        "dropout": 0.3,
+        "gcn_bool": true,
+        "addaptadj": true,
+        "aptinit": null,
+        "in_dim": 2,
+        "out_dim": 12,
+        "residual_channels": 32,
+        "dilation_channels": 32,
+        "skip_channels": 256,
+        "end_channels": 512,
+        "kernel_size": 2,
+        "blocks": 4,
+        "layers": 2
+    },
+    "JINAN":{
+        "num_nodes": 406,
+        "dropout": 0.3,
+        "gcn_bool": true,
+        "addaptadj": true,
+        "aptinit": null,
+        "in_dim": 2,
+        "out_dim": 12,
+        "residual_channels": 32,
+        "dilation_channels": 32,
+        "skip_channels": 256,
+        "end_channels": 512,
+        "kernel_size": 2,
+        "blocks": 4,
+        "layers": 2
+    }
+  },
+  "STFGNN": {
+    "PEMSD7": {
+      "activation": "GLU",
+      "first_layer_embedding_size": 64,
+      "hidden_dims": [
+        [
+          32,
+          32,
+          32
+        ],
+        [
+          32,
+          32,
+          32
+        ],
+        [
+          32,
+          32,
+          32
+        ]
+      ],
+      "horizon": 12,
+      "input_dim": 1,
+      "mask": "None",
+      "num_nodes": 883,
+      "out_layer_dim": 64,
+      "output_dim": 1,
+      "spatial_emb": true,
+      "strides": 4,
+      "temporal_emb": true,
+      "window": 12
+    },
+    "PEMSD8": {
+      "activation": "GLU",
+      "first_layer_embedding_size": 64,
+      "hidden_dims": [
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ]
+      ],
+      "horizon": 12,
+      "input_dim": 1,
+      "mask": "None",
+      "num_nodes": 170,
+      "out_layer_dim": 128,
+      "output_dim": 1,
+      "spatial_emb": true,
+      "temporal_emb": true,
+      "window": 12
+    },
+    "PEMSD4": {
+      "activation": "GLU",
+      "first_layer_embedding_size": 64,
+      "hidden_dims": [
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ]
+      ],
+      "horizon": 12,
+      "input_dim": 1,
+      "mask": "None",
+      "num_nodes": 307,
+      "out_layer_dim": 128,
+      "output_dim": 1,
+      "spatial_emb": true,
+      "temporal_emb": true,
+      "window": 12
+    },
+    "PEMSD3": {
+      "activation": "GLU",
+      "first_layer_embedding_size": 64,
+      "hidden_dims": [
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ]
+      ],
+      "horizon": 12,
+      "input_dim": 1,
+      "mask": "None",
+      "num_nodes": 358,
+      "out_layer_dim": 128,
+      "output_dim": 1,
+      "spatial_emb": true,
+      "temporal_emb": true,
+      "window": 12
+    }
+  },
+  
+  "STGODE": {
+    "PEMSD7": {
+      "history": 12,
+      "horizon": 12,
+      "input_dim": 1,
+      "num_features": 1,
+      "num_nodes": 883,
+      "output_dim": 1,
+      "sigma1": 0.1,
+      "sigma2": 10,
+      "thres1": 0.6,
+      "thres2": 0.5
+    },
+    "PEMSD8": {
+      "history": 12,
+      "horizon": 12,
+      "input_dim": 1,
+      "num_features": 1,
+      "num_nodes": 170,
+      "output_dim": 1,
+      "sigma1": 0.1,
+      "sigma2": 10,
+      "thres1": 0.6,
+      "thres2": 0.5
+    },
+    "PEMSD4": {
+      "history": 12,
+      "horizon": 12,
+      "input_dim": 1,
+      "num_features": 1,
+      "num_nodes": 307,
+      "output_dim": 1,
+      "sigma1": 0.1,
+      "sigma2": 10,
+      "thres1": 0.6,
+      "thres2": 0.5
+    },
+    "PEMSD3": {
+      "history": 12,
+      "horizon": 12,
+      "input_dim": 1,
+      "num_features": 1,
+      "num_nodes": 358,
+      "output_dim": 1,
+      "sigma1": 0.1,
+      "sigma2": 10,
+      "thres1": 0.6,
+      "thres2": 0.5
+    },
+    "SD":{
+        "history": 12,
+        "horizon": 12,
+        "input_dim": 1,
+        "num_features": 1,
+        "num_nodes": 716,
+        "output_dim": 1,
+        "sigma1": 0.1,
+        "sigma2": 10,
+        "thres1": 0.6,
+        "thres2": 0.5
+    },
+    "JINAN":{
+        "history": 12,
+        "horizon": 12,
+        "input_dim": 1,
+        "num_features": 1,
+        "num_nodes": 406,
+        "output_dim": 1,
+        "sigma1": 0.1,
+        "sigma2": 10,
+        "thres1": 0.6,
+        "thres2": 0.5
+    }
+  },
+  "MegaCRN": {
+    "PEMSD7": {
+        "num_nodes": 883,
+        "input_dim": 1,
+        "output_dim": 1,
+        "horizon": 12,
+        "rnn_units": 128,
+        "num_layers": 1,
+        "cheb_k": 3,
+        "ycov_dim": 1,
+        "mem_num": 20,
+        "mem_dim": 128,
+        "cl_decay_steps": 2000,
+        "use_curriculum_learning":true
+    },
+    "PEMSD8": {
+        "num_nodes": 170,
+        "input_dim": 1,
+        "output_dim": 1,
+        "horizon": 12,
+        "rnn_units": 128,
+        "num_layers": 1,
+        "cheb_k": 3,
+        "ycov_dim": 1,
+        "mem_num": 20,
+        "mem_dim": 128,
+        "cl_decay_steps": 2000,
+        "use_curriculum_learning": true
+    },
+    "PEMSD4": {
+        "num_nodes": 307,
+        "input_dim": 1,
+        "output_dim": 1,
+        "horizon": 12,
+        "rnn_units": 128,
+        "num_layers": 1,
+        "cheb_k": 3,
+        "ycov_dim": 1,
+        "mem_num": 20,
+        "mem_dim": 128,
+        "cl_decay_steps": 2000,
+        "use_curriculum_learning": true
+    },
+    "PEMSD3": {
+        "num_nodes": 358,
+        "input_dim": 1,
+        "output_dim": 1,
+        "horizon": 12,
+        "rnn_units": 128,
+        "num_layers": 1,
+        "cheb_k": 3,
+        "ycov_dim": 1,
+        "mem_num": 20,
+        "mem_dim": 128,
+        "cl_decay_steps": 2000,
+        "use_curriculum_learning": true
+    },
+    "SD":{
+        "num_nodes": 716,
+        "input_dim": 1,
+        "output_dim": 1,
+        "horizon": 12,
+        "rnn_units": 128,
+        "num_layers": 1,
+        "cheb_k": 3,
+        "ycov_dim": 1,
+        "mem_num": 20,
+        "mem_dim": 128,
+        "cl_decay_steps": 2000,
+        "use_curriculum_learning": true
+    },
+    "JINAN":{
+        "num_nodes": 406,
+        "input_dim": 1,
+        "output_dim": 1,
+        "horizon": 12,
+        "rnn_units": 128,
+        "num_layers": 1,
+        "cheb_k": 3,
+        "ycov_dim": 1,
+        "mem_num": 20,
+        "mem_dim": 128,
+        "cl_decay_steps": 2000,
+        "use_curriculum_learning": true
+    }
+  },
+  "STSGCN": {
+    "PEMSD7": {
+      "activation": "GLU",
+      "construct_type": "connectivity",
+      "first_layer_embedding_size": 64,
+      "hidden_dims": [
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ]
+      ],
+      "history": 12,
+      "horizon": 12,
+      "input_dim": 1,
+      "num_nodes": 883,
+      "out_layer_dim": 128,
+      "output_dim": 1,
+      "spatial_emb": true,
+      "strides": 3,
+      "temporal_emb": true,
+      "use_mask": true
+    },
+    "PEMSD8": {
+      "activation": "GLU",
+      "construct_type": "connectivity",
+      "first_layer_embedding_size": 64,
+      "hidden_dims": [
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ]
+      ],
+      "history": 12,
+      "horizon": 12,
+      "input_dim": 1,
+      "num_nodes": 170,
+      "out_layer_dim": 128,
+      "output_dim": 1,
+      "spatial_emb": true,
+      "strides": 3,
+      "temporal_emb": true,
+      "use_mask": true
+    },
+    "PEMSD4": {
+      "activation": "GLU",
+      "construct_type": "connectivity",
+      "first_layer_embedding_size": 64,
+      "hidden_dims": [
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ]
+      ],
+      "history": 12,
+      "horizon": 12,
+      "input_dim": 1,
+      "num_nodes": 307,
+      "out_layer_dim": 128,
+      "output_dim": 1,
+      "spatial_emb": true,
+      "strides": 3,
+      "temporal_emb": true,
+      "use_mask": true
+    },
+    "PEMSD3": {
+      "activation": "GLU",
+      "construct_type": "connectivity",
+      "first_layer_embedding_size": 64,
+      "hidden_dims": [
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ],
+        [
+          64,
+          64,
+          64
+        ]
+      ],
+      "history": 12,
+      "horizon": 12,
+      "input_dim": 1,
+      "num_nodes": 358,
+      "out_layer_dim": 128,
+      "output_dim": 1,
+      "spatial_emb": true,
+      "strides": 3,
+      "temporal_emb": true,
+      "use_mask": true
+    }
+  },
+  "DCRNN": {
+    "PEMSD7": {
+        "cl_decay_steps": 2000,
+        "horizon": 12,
+        "input_dim": 2,
+        "max_diffusion_step": 2,
+        "num_nodes": 883,
+        "num_rnn_layers": 2,
+        "output_dim": 1,
+        "rnn_units": 64,
+        "seq_len": 12,
+        "use_curriculum_learning": true
+    },
+    "PEMSD8": {
+        "cl_decay_steps": 2000,
+        "horizon": 12,
+        "input_dim": 2,
+        "max_diffusion_step": 2,
+        "num_nodes": 170,
+        "num_rnn_layers": 2,
+        "output_dim": 1,
+        "rnn_units": 64,
+        "seq_len": 12,
+        "use_curriculum_learning": true
+    },
+    "PEMSD4": {
+        "cl_decay_steps": 2000,
+        "horizon": 12,
+        "input_dim": 2,
+        "max_diffusion_step": 2,
+        "num_nodes": 307,
+        "num_rnn_layers": 2,
+        "output_dim": 1,
+        "rnn_units": 64,
+        "seq_len": 12,
+        "use_curriculum_learning": true
+    },
+    "PEMSD3": {
+        "cl_decay_steps":2000,
+        "horizon": 12,
+        "input_dim": 2,
+        "max_diffusion_step": 2,
+        "num_nodes": 358,
+        "num_rnn_layers": 2,
+        "output_dim": 1,
+        "rnn_units": 64,
+        "seq_len": 12,
+        "use_curriculum_learning": true
+    },
+    "SD":{
+        "cl_decay_steps": 2000,
+        "horizon": 12,
+        "input_dim": 2,
+        "max_diffusion_step": 2,
+        "num_nodes": 716,
+        "num_rnn_layers": 2,
+        "output_dim": 1,
+        "rnn_units": 64,
+        "seq_len": 12,
+        "use_curriculum_learning": true
+    },
+    "JINAN":{
+        "cl_decay_steps": 2000,
+        "horizon": 12,
+        "input_dim": 2,
+        "max_diffusion_step": 2,
+        "num_nodes": 406,
+        "num_rnn_layers": 2,
+        "output_dim": 1,
+        "rnn_units": 64,
+        "seq_len": 12,
+        "use_curriculum_learning": true
+    }
+  },
+  "AGCRN": {
+    "PEMSD7": {
+      "cheb_k": 2,
+      "cheb_order": 2,
+      "embed_dim": 10,
+      "input_dim": 1,
+      "num_layers": 2,
+      "num_nodes": 883,
+      "output_dim": 1,
+      "rnn_units": 64
+    },
+    "PEMSD8": {
+      "cheb_k": 2,
+      "cheb_order": 2,
+      "embed_dim": 2,
+      "input_dim": 1,
+      "num_layers": 2,
+      "num_nodes": 170,
+      "output_dim": 1,
+      "rnn_units": 64
+    },
+    "PEMSD4": {
+      "cheb_k": 2,
+      "cheb_order": 2,
+      "embed_dim": 10,
+      "input_dim": 1,
+      "num_layers": 2,
+      "num_nodes": 307,
+      "output_dim": 1,
+      "rnn_units": 64
+    },
+    "PEMSD3": {
+      "cheb_k": 2,
+      "cheb_order": 2,
+      "embed_dim": 10,
+      "input_dim": 1,
+      "num_layers": 2,
+      "num_nodes": 358,
+      "output_dim": 1,
+      "rnn_units": 64
+    },
+    "SD":{
+        "cheb_k": 2,
+        "cheb_order": 2,
+        "embed_dim": 10,
+        "input_dim": 1,
+        "num_layers": 2,
+        "num_nodes": 716,
+        "output_dim": 1,
+        "rnn_units": 64
+    },
+    "JINAN":{
+        "cheb_k": 2,
+        "cheb_order": 2,
+        "embed_dim": 10,
+        "input_dim": 1,
+        "num_layers": 2,
+        "num_nodes": 406,
+        "output_dim": 1,
+        "rnn_units": 64
+    }
+  },
+  "STGCN": {
+    "PEMSD7": {
+        "Ks": 3,
+        "Kt": 3,
+        "blocks": [
+            [
+                1
+            ],
+            [
+                64,
+                16,
+                64
+            ],
+            [
+                64,
+                16,
+                64
+            ],
+            [
+                128,
+                128
+            ],
+            [
+                12
+            ]
+        ],
+        "T": 12,
+        "n_vertex": 883,
+        "act_func": "glu",
+        "graph_conv_type": "cheb_graph_conv",
+        "bias": true,
+        "droprate": 0.5
+    },
+    "PEMSD8": {
+        "Ks": 3,
+        "Kt": 3,
+        "blocks": [
+            [
+                1
+            ],
+            [
+                64,
+                16,
+                64
+            ],
+            [
+                64,
+                16,
+                64
+            ],
+            [
+                128,
+                128
+            ],
+            [
+                12
+            ]
+        ],
+        "T": 12,
+        "n_vertex": 170,
+        "act_func": "glu",
+        "graph_conv_type": "cheb_graph_conv",
+        "bias": true,
+        "droprate": 0.5
+    },
+    "PEMSD4": {
+        "Ks": 3,
+        "Kt": 3,
+        "blocks": [
+            [
+                1
+            ],
+            [
+                64,
+                16,
+                64
+            ],
+            [
+                64,
+                16,
+                64
+            ],
+            [
+                128,
+                128
+            ],
+            [
+                12
+            ]
+        ],
+        "T": 12,
+        "n_vertex": 307,
+        "act_func": "glu",
+        "graph_conv_type": "cheb_graph_conv",
+        "bias": true,
+        "droprate": 0.5    
+    },
+    "PEMSD3": {
+            "Ks": 3,
+            "Kt": 3,
+            "blocks": [
+                [
+                    1
+                ],
+                [
+                    64,
+                    16,
+                    64
+                ],
+                [
+                    64,
+                    16,
+                    64
+                ],
+                [
+                    128,
+                    128
+                ],
+                [
+                    12
+                ]
+            ],
+            "T": 12,
+            "n_vertex": 358,
+            "act_func": "glu",
+            "graph_conv_type": "cheb_graph_conv",
+            "bias": true,
+            "droprate": 0.5
+    },
+    "SD":{
+        "Ks": 3,
+        "Kt": 3,
+        "blocks": [
+            [
+                1
+            ],
+            [
+                64,
+                16,
+                64
+            ],
+            [
+                64,
+                16,
+                64
+            ],
+            [
+                128,
+                128
+            ],
+            [
+                12
+            ]
+        ],
+        "T": 12,
+        "n_vertex": 716,
+        "act_func": "glu",
+        "graph_conv_type": "cheb_graph_conv",
+        "bias": true,
+        "droprate": 0.5
+    },
+    "JINAN":{
+        "Ks": 3,
+        "Kt": 3,
+        "blocks": [
+            [
+                1
+            ],
+            [
+                64,
+                16,
+                64
+            ],
+            [
+                64,
+                16,
+                64
+            ],
+            [
+                128,
+                128
+            ],
+            [
+                12
+            ]
+        ],
+        "T": 12,
+        "n_vertex": 406,
+        "act_func": "glu",
+        "graph_conv_type": "cheb_graph_conv",
+        "bias": true,
+        "droprate": 0.5
+    }
+  },
+  "ASTGCN": {
+     "PEMSD7":{
+        "num_of_weeks": 1,
+        "num_of_days": 1,
+        "num_of_hours": 3,
+        "K": 3,
+        "num_nodes": 883,
+        "num_for_predict": 12,
+        "points_per_hour": 12,
+        "nb_block": 2,
+        "in_channels": 3
+     },
+     "PEMSD8":{
+        "num_of_weeks": 1,
+        "num_of_days": 1,
+        "num_of_hours": 3,
+        "K": 3,
+        "num_nodes": 170,
+        "num_for_predict": 12,
+        "points_per_hour": 12,
+        "nb_block": 2,
+        "in_channels": 3
+     },
+    "PEMSD4":{
+        "num_of_weeks": 1,
+        "num_of_days": 1,
+        "num_of_hours": 3,
+        "K": 3,
+        "num_nodes": 307,
+        "num_for_predict": 12,
+        "points_per_hour": 12,
+        "nb_block": 2,
+        "in_channels": 3
+    },
+    "PEMSD3":{
+        "num_of_weeks": 1,
+        "num_of_days": 1,
+        "num_of_hours": 3,
+        "K": 3,
+        "num_nodes": 358,
+        "num_for_predict": 12,
+        "points_per_hour": 12,
+        "nb_block": 2,
+        "in_channels": 3
+    },
+    "SD":{
+        "num_of_weeks": 1,
+        "num_of_days": 1,
+        "num_of_hours": 3,
+        "K": 3,
+        "num_nodes": 716,
+        "num_for_predict": 12,
+        "points_per_hour": 12,
+        "nb_block": 2,
+        "in_channels": 3
+    },
+    "JINAN":{
+        "num_of_weeks": 1,
+        "num_of_days": 1,
+        "num_of_hours": 3,
+        "K": 3,
+        "num_nodes": 406,
+        "num_for_predict": 12,
+        "points_per_hour": 12,
+        "nb_block": 2,
+        "in_channels": 3
+    }
+},
+    "DGCRN":  {
+        "PEMSD7":{
+            "gcn_depth": 2,
+            "num_nodes": 883,
+            "dropout": 0.3,
+            "subgraph_size": 20,
+            "node_dim": 40,
+            "middle_dim": 2,
+            "seq_length": 12,
+            "in_dim": 2,
+            "list_weight": [
+                0.05,
+                0.95,
+                0.95
+            ],
+            "tanhalpha": 3,
+            "cl_decay_steps": 4000,
+            "rnn_size": 64,
+            "hyperGNN_dim": 16
+        },
+        "PEMSD8":{
+            "gcn_depth": 2,
+            "num_nodes": 170,
+            "dropout": 0.3,
+            "subgraph_size": 20,
+            "node_dim": 40,
+            "middle_dim": 2,
+            "seq_length": 12,
+            "in_dim": 2,
+            "list_weight": [
+                0.05,
+                0.95,
+                0.95
+            ],
+            "tanhalpha": 3,
+            "cl_decay_steps": 4000,
+            "rnn_size": 64,
+            "hyperGNN_dim": 16
+        },
+        "PEMSD4":{
+            "gcn_depth": 2,
+            "num_nodes": 307,
+            "dropout": 0.3,
+            "subgraph_size": 20,
+            "node_dim": 40,
+            "middle_dim": 2,
+            "seq_length": 12,
+            "in_dim": 2,
+            "list_weight": [
+                0.05,
+                0.95,
+                0.95
+            ],
+            "tanhalpha": 3,
+            "cl_decay_steps": 4000,
+            "rnn_size": 64,
+            "hyperGNN_dim": 16
+        },
+        "PEMSD3":{
+            "gcn_depth": 2,
+            "num_nodes": 358,
+            "dropout": 0.3,
+            "subgraph_size": 20,
+            "node_dim": 40,
+            "middle_dim": 2,
+            "seq_length": 12,
+            "in_dim": 2,
+            "list_weight": [
+                0.05,
+                0.95,
+                0.95
+            ],
+            "tanhalpha": 3,
+            "cl_decay_steps": 4000,
+            "rnn_size": 64,
+            "hyperGNN_dim": 16
+        },
+        "SD":{
+            "gcn_depth": 2,
+            "num_nodes": 716,
+            "dropout": 0.3,
+            "subgraph_size": 20,
+            "node_dim": 40,
+            "middle_dim": 2,
+            "seq_length": 12,
+            "in_dim": 2,
+            "list_weight": [
+                0.05,
+                0.95,
+                0.95
+            ],
+            "tanhalpha": 3,
+            "cl_decay_steps": 4000,
+            "rnn_size": 64,
+            "hyperGNN_dim": 16
+        },
+        "JINAN":{
+            "gcn_depth": 2,
+            "num_nodes": 406,
+            "dropout": 0.3,
+            "subgraph_size": 20,
+            "node_dim": 40,
+            "middle_dim": 2,
+            "seq_length": 12,
+            "in_dim": 2,
+            "list_weight": [
+                0.05,
+                0.95,
+                0.95
+            ],
+            "tanhalpha": 3,
+            "cl_decay_steps": 4000,
+            "rnn_size": 64,
+            "hyperGNN_dim": 16
+        }
+    },
+    "D2STGNN":{
+        "PEMSD7":{
+            "num_feat": 1,
+            "num_hidden": 32,
+            "dropout": 0.1,
+            "seq_length": 12,
+            "k_t": 3,
+            "k_s": 2,
+            "gap": 3,
+            "num_nodes": 886,
+            "num_layers": 5,
+            "num_modalities": 2,
+            "node_hidden": 10,
+            "time_emb_dim": 10,
+            "time_in_day_size": 288,
+            "day_in_week_size": 7
+        },
+        "PEMSD8":{
+            "num_feat": 1,
+            "num_hidden": 32,
+            "dropout": 0.1,
+            "seq_length": 12,
+            "k_t": 3,
+            "k_s": 2,
+            "gap": 3,
+            "num_nodes": 170,
+            "num_layers": 5,
+            "num_modalities": 2,
+            "node_hidden": 10,
+            "time_emb_dim": 10,
+            "time_in_day_size": 288,
+            "day_in_week_size": 7
+        },
+        "PEMSD4":{
+            "num_feat": 1,
+            "num_hidden": 32,
+            "dropout": 0.1,
+            "seq_length": 12,
+            "k_t": 3,
+            "k_s": 2,
+            "gap": 3,
+            "num_nodes": 307,
+            "num_layers": 5,
+            "num_modalities": 2,
+            "node_hidden": 10,
+            "time_emb_dim": 10,
+            "time_in_day_size": 288,
+            "day_in_week_size": 7
+        },
+        "PEMSD3":{
+            "num_feat": 1,
+            "num_hidden": 32,
+            "dropout": 0.1,
+            "seq_length": 12,
+            "k_t": 3,
+            "k_s": 2,
+            "gap": 3,
+            "num_nodes": 358,
+            "num_layers": 5,
+            "num_modalities": 2,
+            "node_hidden": 10,
+            "time_emb_dim": 10,
+            "time_in_day_size": 288,
+            "day_in_week_size": 7
+        },
+        "SD":{
+            "num_feat": 1,
+            "num_hidden": 32,
+            "dropout": 0.1,
+            "seq_length": 12,
+            "k_t": 3,
+            "k_s": 2,
+            "gap": 3,
+            "num_nodes": 716,
+            "num_layers": 5,
+            "num_modalities": 2,
+            "node_hidden": 10,
+            "time_emb_dim": 10,
+            "time_in_day_size": 96,
+            "day_in_week_size": 7
+        },
+        "JINAN":{
+            "num_feat": 1,
+            "num_hidden": 32,
+            "dropout": 0.1,
+            "seq_length": 12,
+            "k_t": 3,
+            "k_s": 2,
+            "gap": 3,
+            "num_nodes": 406,
+            "num_layers": 5,
+            "num_modalities": 2,
+            "node_hidden": 10,
+            "time_emb_dim": 10,
+            "time_in_day_size": 288,
+            "day_in_week_size": 7
+        }
+    },
+
+    "DSTAGNN":{
+        "PEMSD7":{
+            "nb_block": 4,
+            "nb_chev_filter": 32,
+            "nb_time_filter": 32,
+            "time_stride": 1,
+            "d_model": 512,
+            "d_k": 32,
+            "n_head": 3,
+            "period": 288,
+            "points_per_hour": 12,
+            "num_for_predict": 12,
+            "len_input": 12,
+            "num_nodes": 883
+        },
+        "PEMSD4":{
+            "nb_block": 4,
+            "nb_chev_filter": 32,
+            "nb_time_filter": 32,
+            "time_stride": 1,
+            "d_model": 512,
+            "d_k": 32,
+            "n_head": 3,
+            "period": 288,
+            "points_per_hour": 12,
+            "num_for_predict": 12,
+            "len_input": 12,
+            "num_nodes": 307
+        },
+        "PEMSD3":{
+            "nb_block": 4,
+            "nb_chev_filter": 32,
+            "nb_time_filter": 32,
+            "time_stride": 1,
+            "d_model": 512,
+            "d_k": 32,
+            "n_head": 3,
+            "period": 288,
+            "num_for_predict": 12,
+            "len_input": 12,
+            "num_nodes": 358
+        }
+    },
+    "GMAN":{
+        "PEMSD7":{
+            "num_nodes": 883,
+            "input_dim": 2,
+            "D": 64,
+            "points_per_hour": 12,
+            "L": 5,
+            "K": 8,
+            "add_time_in_day": true,
+            "add_day_in_week": false,
+            "bn": true,
+            "bn_decay": 0.1
+        },
+        "PEMSD8":{
+            "num_nodes": 170,
+            "input_dim": 2,
+            "D": 64,
+            "points_per_hour": 12,
+            "L": 5,
+            "K": 8,
+            "add_time_in_day": true,
+            "add_day_in_week": false,
+            "bn": true,
+            "bn_decay": 0.1
+        },
+        "PEMSD4":{
+            "num_nodes": 307,
+            "input_dim": 2,
+            "D": 64,
+            "points_per_hour": 12,
+            "L": 5,
+            "K": 8,
+            "add_time_in_day": true,
+            "add_day_in_week": false,
+            "bn": true,
+            "bn_decay": 0.1
+        },
+        "PEMSD3":{
+            "num_nodes": 358,
+            "input_dim": 2,
+            "D": 64,
+            "points_per_hour": 12,
+            "L": 5,
+            "K": 8,
+            "add_time_in_day": true,
+            "add_day_in_week": false,
+            "bn": true,
+            "bn_decay": 0.1
+        }
+    }
+}
